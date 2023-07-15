@@ -1,0 +1,152 @@
+/* mobile-first, dude! */
+
+.outer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.header {
+  margin-top: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: justify;
+}
+
+.header span {
+  display: block;
+  padding: .5em;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.header img {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.box {
+  padding: 1em;
+}
+
+.box.whatsapp {
+  background-color: lightgreen;
+}
+
+.box.telegram {
+  background-color: lightblue;
+}
+
+.box-header {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.box-header img {
+  height: 30px;
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+}
+
+.instructions ol {
+  text-align: left;
+  list-style-type: decimal;
+  margin: 1em;
+}
+
+.instructions ol li {
+  padding-bottom: .5em;
+}
+
+.instructions.hidden ol {
+  display: none;
+}
+
+.packs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: .5em 0;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.packs a:hover {
+  font-weight: bold;
+}
+
+.whatsapp .packs a {
+  background-color: green;
+  color: white;
+}
+
+.whatsapp .packs a:hover {
+  background-color: #efe;
+  color: black;
+}
+
+.telegram .packs a {
+  background-color: blue;
+  color: white;
+}
+
+.telegram .packs a:hover {
+  background-color: #eef;
+  color: black;
+}
+
+.footer {
+  margin-top: 1em;
+  border-top: 1px solid #333;
+  padding: .5em;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: #f3f3f3;
+  }
+
+  .outer {
+    width: 60%;
+    max-width: 800px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    background-color: #fff;
+  }
+
+  .box {
+    border-radius: 1em;
+    margin-bottom: 1em;
+  }
+
+  .box.whatsapp {
+    border: 2px solid green;
+  }
+
+  .box.telegram {
+    border: 2px solid blue;
+  }
+
+}

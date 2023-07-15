@@ -1,114 +1,137 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="es-ES">
 <head>
-    <title>Hora Veintipico Stickers</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+  <title>Hora Veintipico Stickers</title>
+  <meta name="description" content="Stickers para Whatsapp y Telegram de Hora Veintipico">
+  <meta name="author" content="Alberto Bastos">
 
-        .header-image {
-            display: block;
-            max-width: 100%;
-            margin-bottom: 20px;
-        }
+  <meta property="og:title" content="Hora Veintipico Stickers">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://">
+  <meta property="og:description" content="Stickers para Whatsapp y Telegram de Hora Veintipico">
+  <meta property="og:image" content="">
 
-        .pack {
-            margin-bottom: 20px;
-        }
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-        .pack .header {
-            cursor: pointer;
-            background-color: #f5f5f5;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css?v=1.0">
 
-        .pack .content {
-            display: none;
-            padding: 10px;
-        }
-
-        .pack .content img {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
-        }
-    </style>
-    <script>
-        function toggleContent(element) {
-            var content = element.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-
-        const PACKS = [
-          { type: "Whatsapp", pack: 1, open: false, id: "wa-1", link: "bin/Hora Veintipico (1).wastickers" },
-          { type: "Whatsapp", pack: 2, open: false, id: "wa-2", link: "bin/Hora Veintipico (2).wastickers" },
-          { type: "Whatsapp", pack: 3, open: false, id: "wa-3", link: "bin/Hora Veintipico (3).wastickers" },
-          { type: "Whatsapp", pack: 4, open: false, id: "wa-4", link: "bin/Hora Veintipico (4).wastickers" },
-          { type: "Whatsapp", pack: 5, open: true,  id: "wa-5", link: "bin/Hora Veintipico (5).wastickers" },
-          { type: "Telegram", pack: 1, open: false, id: "tg-1", link: "https://t.me/addstickers/HoraVeintipico" },
-          { type: "Telegram", pack: 2, open: true,  id: "tg-2", link: "https://t.me/addstickers/HoraVeintipico2" },
-        ];
-
-        const CONTENTS = [
-          { img: ".webp", title: "", packs: [] },
-        ]
-
-        (function() {
-          console.log('Filling');
-        })();
-    </script>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JM3K6C1CK3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JM3K6C1CK3');
+</script>
+
 <body>
-    <div class="container">
-        <img class="header-image" src="placeholder_image.jpg" alt="Stickers de Hora Veintipico">
-        <h1>Hora Veintipico Stickers</h1>
-        <h2>Stickers para Whatsapp y Telegram</h2>
-        <div class="grid-container">
-            <div class="pack">
-                <div class="header" onclick="toggleContent(this)">Whatsapp Pack #1</div>
-                <div class="content">
-                    <img src="whatsapp_sticker1_1.webp" alt="Sticker 1">
-                    <img src="whatsapp_sticker1_2.webp" alt="Sticker 2">
-                    <img src="whatsapp_sticker1_3.webp" alt="Sticker 3">
-                </div>
-            </div>
-            <div>
-        </div>
 
-        <div id="instructions">
-            <h2>Instrucciones</h2>
-            <h3>Whatsapp:</h3>
-            <ol>
-                <li>TODO</li>
-            </ol>
-
-            <h3>Telegram:</h3>
-            <ol>
-                <li>TODO</li>
-            </ol>
-        </div>
+  <div class="outer">
+    <div class="header">
+      <img
+        alt="Stickers de Hora Veintipico"
+        title="Stickers de Hora Veintipico"
+        src="img/header.jpg"
+      />
+      <span>¿Crees que hay un inserto de Hora Veintipico perfecto para
+        responder en cada conversación? ¿Te pasas el día diciendo <i>Poco me
+        parece</i>, <i>¿Pero usted quién es?</i> o <i>No tiene ni puta idea de
+        lo que está diciendo</i>? ¿Quieres poder expresarte como mejor sabes en tus
+        aplicaciones de mensajería? Entonces este es tu lugar.</span>
     </div>
+    <div class="box whatsapp">
+      <div class="box-header">
+        <img alt="Logo de Whatsapp" title="Whatsapp" src="img/wa.gif"/>
+        <br />Whatsapp
+      </div>
+      <div class="instructions">
+        <ol>
+          <li>Instalar la aplicación <strong>Sticker Maker</strong> desde la
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.marsvard.stickermakerforwhatsapp&hl=es&gl=US">Play Store para Android</a>
+          o la <a target="_blank" href="https://apps.apple.com/es/app/sticker-maker-studio/id1443326857">App Store para iPhone</a></li>
+          <li>Descargar desde el móvil los packs deseados. Por limitaciones de
+          Whatsapp, cada pack tiene un máximo de 30 stickers.</li>
+          <li>Abrir cada uno de los archivos con extensión
+          <code>.wastickers</code> con Sticker Maker.</li>
+          <li>Pulsar el botón <strong>Agregar a Whatsapp</strong> ubicado en
+          la parte inferior derecha de la pantalla con los contenidos del pack.
+          </li>
+          <li>Tras un mensaje de confirmación, el pack de stickers ya se podrá
+          elegir desde el espacio de emoticonos y stickers de Whatsapp.</li>
+        </ol>
+      </div>
+      <div class="packs">
+        <a
+          href="bin/Hora Veintipico (1).wastickers"
+          title="Pack #1 de Stickers de Hora Veintipico para Whatsapp"
+        >Pack #1</a>
+        <a
+          href="bin/Hora Veintipico (2).wastickers"
+          title="Pack #2 de Stickers de Hora Veintipico para Whatsapp"
+        >Pack #2</a>
+        <a
+          href="bin/Hora Veintipico (3).wastickers"
+          title="Pack #3 de Stickers de Hora Veintipico para Whatsapp"
+        >Pack #3</a>
+        <a
+          href="bin/Hora Veintipico (4).wastickers"
+          title="Pack #4 de Stickers de Hora Veintipico para Whatsapp"
+        >Pack #4</a>
+        <a
+          href="bin/Hora Veintipico (5).wastickers"
+          title="Pack #5 de Stickers de Hora Veintipico para Whatsapp"
+        >Pack #5 (en curso)</a>
+      </div>
+    </div>
+    <div class="box telegram">
+      <div class="box-header">
+        <img alt="Logo de Telegram" title="Telegram" src="img/tg.gif"/><br />
+        Telegram
+      </div>
+      <div class="instructions">
+        <ol>
+          <li>Pulsar desde el dispositivo en el que tengamos instalado Telegram
+          el enlace del pack que queremos añadir.</li>
+          <li>La aplicación de Telegram se abrirá automáticamente
+          previsualizando el contenido del pack. Pulsar el botón "Añadir X
+          stickers"</li>
+          <li>Tras un mensaje de confirmación, el pack de stickers ya se podrá
+          elegir desde el espacio de emoticonos y stickers de Telegram. Por
+          limitaciones del sistema, cada pack contiene un máximo de
+          120 stickers.</li>
+        </ol>
+      </div>
+      <div class="packs">
+        <a
+          href="https://t.me/addstickers/HoraVeintipico"
+          title="Pack #1 de Stickers de Hora Veintipico para Telegram"
+        >Pack #1</a>
+        <a
+          href="https://t.me/addstickers/HoraVeintipico2"
+          title="Pack #2 de Stickers de Hora Veintipico para Telegram"
+        >Pack #2 (en curso)</a>
+      </div>
+    </div>
+    <div class="footer">
+      Stickers sin ánimo de lucro generados por
+      <a href="http://albertobastos.info">Alberto Bastos</a>.
+      <a href="https://www.youtube.com/channel/UCPrSrtwcgim_KpNlwhUB64A">Hora Veintipico</a>
+      es un informativo satírico propiedad de la <a href="https://cadenaser.com/">Cadena SER</a>
+      emitido por radio, YouTube y plataformas de podcasts. El autor de esta
+      página y sus contenidos no tiene ningún vínculo ni relación profesional
+      con el equipo del programa.
+    </div>
+  </div>
+
 </body>
 </html>

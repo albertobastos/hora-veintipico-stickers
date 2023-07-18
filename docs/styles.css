@@ -19,6 +19,12 @@
   padding: .5em;
 }
 
+.header span.share {
+  margin-top: .5em;
+  text-align: center;
+  background-color: #eee;
+}
+
 a, a:link, a:visited, a:active, a:hover {
   text-decoration: none;
   color: blue;
@@ -49,6 +55,10 @@ strong {
   background-color: lightblue;
 }
 
+.box.zip {
+  background-color: lightyellow;
+}
+
 .box-header {
   text-align: center;
   font-weight: bold;
@@ -64,18 +74,14 @@ strong {
   text-align: center;
 }
 
-.instructions ol {
+.instructions ol, .instructions ul {
   text-align: left;
   list-style-type: decimal;
   margin: 1em;
 }
 
-.instructions ol li {
+.instructions li {
   padding-bottom: .5em;
-}
-
-.instructions.hidden ol {
-  display: none;
 }
 
 .packs a {
@@ -110,6 +116,16 @@ strong {
 .telegram .packs a:hover {
   background-color: #eef;
   color: black;
+}
+
+.zip .packs a {
+  background-color: #ee0;
+  color: black;
+}
+
+.zip .packs a:hover {
+  background-color: #990;
+  color: white;
 }
 
 .footer {
@@ -147,6 +163,10 @@ strong {
 
   .box.telegram {
     border: 2px solid blue;
+  }
+
+  .box.zip {
+    border: 2px solid #660;
   }
 
 }
